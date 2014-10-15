@@ -713,7 +713,7 @@ void DirectForcingSolver<memoryType>::tagPoints(real *bx, real *by, real *uB, re
 
 	parameterDB &db = *NavierStokesSolver<memoryType>::paramDB;
 	std::string folder = db["inputs"]["caseFolder"].get<std::string>();
-	interpolationType interpType = db["simualtion"]["interpolationType"].get<interpolationType>();
+	interpolationType interpType = db["simulation"]["interpolationType"].get<interpolationType>();
 
 	bool outsideX, outsideY, flag;
 	int  bdryFlagX, bdryFlagY, k, l, I;
